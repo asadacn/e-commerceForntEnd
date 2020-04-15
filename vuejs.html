@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <title>Vue js test </title>
+
+    <style>
+    .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s;
+    }
+    .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+      opacity: 0;
+    }</style>
+</head>
+<body>
+    
+
+      <div id="app">
+        {{ info }}
+      </div>
+
+          <script>
+              
+              new Vue({
+      el: '#app',
+      data: {
+          info: null
+      },
+      mounted () {
+        axios
+          .get('https://ghoapi.azureedge.net/api/DIMENSION/REGION')
+          .then(response => (this.info = response))
+      }
+    })
+            
+      </script>
+
+</body>
+</html>
