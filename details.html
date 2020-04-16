@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/product-gallery.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Satol Express</title>
+    <!-- vue js script -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+        .text-small {
+            font-size: small;
+        }
+
+        .text-price {
+            color: #FF5733;
+            line-height: 0em;
+        }
+
+        .card:hover {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        body {
+            background-color: #f9f9f9;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm  navbar-light justify-content-end py-1 px-5 text-uppercase "
+            style="max-height: min-content; font-size: small; background-color: #F5F5F5;">
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                <ul class="navbar-nav text-right ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Singup</a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#">Language</a>
+                        </li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-light bg-white shadow-sm">
+            <div>
+                <a class="navbar-brand ml-2 text-uppercase shadow-sm p-2 rounded" href="#">
+                    <!-- <img class="rounded" src="image/logonew.png" width="140" height="auto" class="d-inline-block align-top" alt=""> -->
+                    Satol Express
+                </a>
+                <!-- category -->
+                <a class="mx-4" id="catbtn" data-toggle="collapse" href="#categories" role="button"
+                    aria-expanded="false" aria-controls="categories"><i class="fa fa-tasks"></i> Categories</a>
+
+            </div>
+
+
+            <div class=" input-group w-50 mx-auto p-2">
+                <input type="text" class="form-control border-0 p-4 " style="background:#E8F3F3 "
+                    placeholder="Search in Satol Express" aria-label="Recipient's username"
+                    aria-describedby="button-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="button" id="button-addon2"><img src="image/search.png"
+                            alt="search" width="30px" height="auto"></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- slider section -->
+    <section class="slider" style="background-color: #D3D1C4;">
+
+        <div class="mega-menu shadow-sm">
+
+            <nav>
+
+                <ul class="mcd-menu collapse  multi-collapse" id="categories">
+                    <li>
+                        <a href="" class="active">
+                            <i class="fa fa-home"></i>
+                            <strong>Home</strong>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-edit"></i>
+                            <strong>About us</strong>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-gift"></i>
+                            <strong>Features</strong>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-globe"></i>
+                            <strong>News</strong>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-comments-o"></i>
+                            <strong>Blog</strong>
+
+                        </a>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+                            <li>
+                                <a href="#"><i class="fa fa-group"></i>Our Team</a>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-female"></i>Leyla Sparks</a></li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-male"></i>Gleb Ismailov</a>
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+                                            <li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-female"></i>Viktoria Gibbers</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+                            <li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-picture-o"></i>
+                            <strong>Portfolio</strong>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa fa-envelope-o"></i>
+                            <strong>Contacts</strong>
+                        </a>
+                    </li>
+                    <!--  <li class="float">
+                            <a class="search">
+                                <input type="text" value="search ...">
+                                <button><i class="fa fa-search"></i></button>
+                            </a>
+                            <a href="" class="search-mobile">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li> -->
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <div class="container bg-white">
+
+        <div class="row">
+            <div class="col-md-5 p-2">
+                <div class="show-img" href="image/smartphone.webp">
+                    <img src="image/smartphone.webp" id="show-img">
+                </div>
+
+                <!-- Secondary carousel image thumbnail gallery -->
+
+                <div class="small-img">
+                    <img src="image/next-icon.png" class="icon-left" alt="" id="prev-img">
+                    <div class="small-container">
+                        <div id="small-img-roll">
+                            <img src="image/smartphone.webp" class="show-small-img" alt="">
+                            <img src="image/watch.jpg" class="show-small-img" alt="">
+                            <img src="image/laptop.jpg" class="show-small-img" alt="">
+                            <img src="image/glass.jpg" class="show-small-img" alt="">
+                        </div>
+                    </div>
+                    <img src="image/next-icon.png" class="icon-right" alt="" id="next-img">
+                </div>
+
+            </div>
+            <div class="col-md-7 border-left">
+                <div class="card-body">
+                    <h1>Product Title</h1>
+                    <h5>Size/Variant</h5>
+                    <h4 class="h6">Brand</h4>
+                    <h4 class="h6">Category</h4>
+                    <h4>Price</h4>
+                    <h6><del>Old Price</del> </h6>
+
+                    <div class="input-group" style="max-width:190px;">
+                        <label for="qty">Quantity</label>
+                        <button class="px-2  ml-2">-</button><input class="form-control " type="number" name="qty"
+                            id="qty" value="1"><button class="px-2">+</button>
+                    </div>
+
+                    <br>
+                    <button class="btn  px-5 rounded-pill" style="background-color: dodgerblue; color: white;">BUY NOW</button> <button
+                        class="px-5 btn  rounded-pill" style="background-color: #FF5733; color: white;">ADD TO CART</button>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1 class="h4">Product description</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+
+
+
+        <h6 class="h5 "> Simillar products</h6>
+        <hr>
+        <div class="row justify-content-center ">
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/watch1.jpg" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Watch</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/glass.jpg" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Glass Frame</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/watch1.jpg" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Watch</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/glass.jpg" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Glass Frame</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/watch1.jpg" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Watch</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto mb-1">
+                <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
+                    style="width:10em;  height:17em">
+                    <img src="image/smartphone.webp" class="card-img-top" height="155px" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Watch</h5>
+                        <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
+                                1300tk</del>
+                            -10%</small>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br> <br>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/zoom-image.js"></script>
+    <script src="js/product-gallery.js"></script>
+    <!-- <script>
+        $(window).resize(function () {
+
+            if ($('header').width() <= 600) {
+
+                $('#categories').collapse('hide');
+                $('.input-group').removeClass('w-50');
+
+            } else {
+                $('#categories').collapse('show');
+                $('.input-group').addClass('w-50');
+            }
+
+        });
+    </script> -->
+</body>
+
+</html>
