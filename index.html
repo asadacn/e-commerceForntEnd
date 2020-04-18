@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/product-gallery.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        
     <title>Satol Express</title>
     <!-- vue js script -->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -55,7 +56,7 @@
             </div>
         </nav>
 
-        <nav class="navbar sticky-top navbar-light bg-white shadow-none">
+        <nav class="navbar sticky-top navbar-light bg-white shadow-none" style="background-image: linear-gradient(6deg, rgba(0, 0, 0,0.02) 0%, rgba(0, 0, 0,0.02) 39%,transparent 39%, transparent 74%,rgba(117, 117, 117,0.02) 74%, rgba(117, 117, 117,0.02) 100%),linear-gradient(129deg, rgba(222, 222, 222,0.02) 0%, rgba(222, 222, 222,0.02) 65%,transparent 65%, transparent 73%,rgba(83, 83, 83,0.02) 73%, rgba(83, 83, 83,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));">
             <div>
                 <a class="navbar-brand ml-2 text-uppercase shadow-sm p-2 rounded" href="#">
                     <!-- <img class="rounded" src="image/logonew.png" width="140" height="auto" class="d-inline-block align-top" alt=""> -->
@@ -69,7 +70,7 @@
 
 
             <div class=" input-group w-50 mx-auto p-2">
-                <input type="text" class="form-control border-0 p-4 " style="background:#E8F3F3 "
+                <input type="text" class="form-control border-0 p-4 " style="background:#f1f1f1 "
                     placeholder="Search in Satol Express" aria-label="Recipient's username"
                     aria-describedby="button-addon2">
                 <div class="input-group-append">
@@ -470,126 +471,42 @@
     </div>
 
     </div>
-    <!-- Large modal -->
-
-
-    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-
-            <div class="modal-content">
-                <div class="modal-header">Product preview</div>
-                <div class=" " style="max-width:100;">
-                    <div class="row no-gutters">
-                        <div class="col-md-6">
-                            <!-- <img src="image/smartphone.webp" class="card-img" alt="...">
- -->
-                            <!-- Primary carousel image -->
-
-                            <div class="img-show" href="mobile.jpg">
-                                <img src="image/mobile.jpg" id="show-img">
-                            </div>
-
-                            <!-- Secondary carousel image thumbnail gallery -->
-
-                            <div class="small-img">
-                                <img src="image/next-icon.png" class="icon-left" alt="" id="prev-img">
-                                <div class="small-container">
-                                    <div id="small-img-roll">
-                                        <img src="image/mobile.jpg" class="show-small-img" alt="">
-                                        <img src="image/watch.jpg" class="show-small-img" alt="">
-                                        <img src="image/laptop.jpg" class="show-small-img" alt="">
-                                        <img src="image/glass.jpg" class="show-small-img" alt="">
-                                    </div>
-                                </div>
-                                <img src="image/next-icon.png" class="icon-right" alt="" id="next-img">
-                            </div>
-
-                        </div>
-                        <div class="col-md-6">
-                            <div class="card-body">
-                                <h1>Product Title</h1>
-                                <h5>Size/Variant</h5>
-                                <h4 class="h6">Brand</h4>
-                                <h4 class="h6">Category</h4>
-                                <h4>Price</h4>
-                                <h6><del>Old Price</del> </h6>
-
-                                <div>Quantity: <button class=" m-1">-</button><input class="" value="1" type="number"
-                                        name="qty" id="qty"><button class=" m-1">+</button></div>
-                                <br>
-                                <button>Buy Now</button> <button>Add to cart</button>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class=" container">
-
-                    <h1 class="display-4">Product description</h1>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
-                        parent.</p>
-
-                </div>
-                <hr>
-                <h6 class="h5 ml-3"> Simillar products</h6>
-                <hr>
-                <div class="row justify-content-center ">
-
-                    <div class="col-auto mb-1">
-                        <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
-                            style="width:10em;  height:17em">
-                            <img src="image/glass.jpg" class="card-img-top" height="155px" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Glass Frame</h5>
-                                <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
-                                        1300tk</del> -10%</small>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto mb-1">
-                        <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
-                            style="width:10em;  height:17em">
-                            <img src="image/watch1.jpg" class="card-img-top" height="155px" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Watch</h5>
-                                <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
-                                        1300tk</del> -10%</small>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto mb-1">
-                        <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
-                            style="width:10em;  height:17em">
-                            <img src="image/glass.jpg" class="card-img-top" height="155px" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Glass Frame</h5>
-                                <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
-                                        1300tk</del> -10%</small>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto mb-1">
-                        <div class="card border-0" data-toggle="modal" data-target=".bd-example-modal-xl"
-                            style="width:10em;  height:17em">
-                            <img src="image/watch1.jpg" class="card-img-top" height="155px" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Watch</h5>
-                                <p class="card-text text-price">Price: 1220tk</p><small class="text-muted"><del>Price:
-                                        1300tk</del> -10%</small>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <br>
+    <div class="container">
+        <center><button class="btn btn-lg btn-outline-dark mb-4">LOAD MORE PRODUCTS</button></center>
     </div>
+   
+<div class="bg-dark " style="color:#A9A9A9; background-image: linear-gradient(12deg, rgba(193, 193, 193,0.05) 0%, rgba(193, 193, 193,0.05) 2%,rgba(129, 129, 129,0.05) 2%, rgba(129, 129, 129,0.05) 27%,rgba(185, 185, 185,0.05) 27%, rgba(185, 185, 185,0.05) 66%,rgba(83, 83, 83,0.05) 66%, rgba(83, 83, 83,0.05) 100%),linear-gradient(321deg, rgba(240, 240, 240,0.05) 0%, rgba(240, 240, 240,0.05) 13%,rgba(231, 231, 231,0.05) 13%, rgba(231, 231, 231,0.05) 34%,rgba(139, 139, 139,0.05) 34%, rgba(139, 139, 139,0.05) 71%,rgba(112, 112, 112,0.05) 71%, rgba(112, 112, 112,0.05) 100%),linear-gradient(236deg, rgba(189, 189, 189,0.05) 0%, rgba(189, 189, 189,0.05) 47%,rgba(138, 138, 138,0.05) 47%, rgba(138, 138, 138,0.05) 58%,rgba(108, 108, 108,0.05) 58%, rgba(108, 108, 108,0.05) 85%,rgba(143, 143, 143,0.05) 85%, rgba(143, 143, 143,0.05) 100%),linear-gradient(96deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 53%,rgba(44, 44, 44,0.05) 53%, rgba(44, 44, 44,0.05) 82%,rgba(77, 77, 77,0.05) 82%, rgba(77, 77, 77,0.05) 98%,rgba(8, 8, 8,0.05) 98%, rgba(8, 8, 8,0.05) 100%),linear-gradient(334deg, hsl(247,0%,2%),hsl(247,0%,2%));">
+    <div class="container">
+        <footer>
 
-    <br> <br>
+            <div class="row p-4">
+            <div class="col-sm-8">
+                <!-- <img class="rounded mb-2" src="image/logo.jpg" alt="logo" width="100" style="opacity: .9;"> -->
+                <h4 class="h2">Satol Express</h4>
+                <h6 class="h5">Shop with confidence</h6>
+                <h6 class="h6"><i class="fa fa-map-marker"></i> Dhanmondhi 32, Dhaka 1212</h6>
+                <h5 class=" mb-3"><i class="fa fa-phone"></i> 01718293909</h5>
+                <button class="btn btn-outline-primary px-3"> <i class="fa fa-facebook"></i></button>
+                <button class="btn btn-outline-info"><i class="fa fa-twitter"></i></button>
+                <button class="btn btn-outline-danger"><i class="fa fa-youtube"></i></button> 
+                
+            </div>
+            <div class="col-sm-4">
+                <h5 class="h4">Popular Categories</h5>
+                <ul style=" list-style: none;">
+                <li><i class="fa fa-laptop"></i> <a class="text-muted" href="#">Laptop</a></li>
+                <li><i class="fa fa-wifi"></i> <a class="text-muted" href="#">Router</a></li>
+                <li><i class="fa fa-tv"></i> <a class="text-muted" href="#">TV</a></li>
+                <li><i class="fa fa-desktop"></i> <a class="text-muted" href="#">Desktop</a></li>
+            </ul>
+            <div class="my-3 text-muted"><small> Copyright <i class="fa fa-copyright"></i> 2020 | Design <i class="fa fa-code"></i> Developed by A/J</small></div>
+        </div>
+           
+        </footer>
+    </div>
+   
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.4.1.slim.min.js"></script>
