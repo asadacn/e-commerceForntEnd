@@ -542,7 +542,7 @@
 	
 }*/
 
-@media only screen and (max-width: 479px) {
+/* @media only screen and (max-width: 479px) {
   
     .mcd-menu { 
     width: 50px;
@@ -618,9 +618,7 @@
 		font-size:14px;
 	}
     
-}
-
-
+} */
 
 /*my css start here*/
 .slider{
@@ -639,4 +637,33 @@
     left:15%;  
     z-index: 2;
   }
+}
+
+/* Custom CSS */
+.top-nav{
+  max-height: min-content; font-size: small; background-color: #F5F5F5;
+}
+.bottom-nav{
+  background-image: linear-gradient(6deg, rgba(0, 0, 0,0.02) 0%, rgba(0, 0, 0,0.02) 39%,transparent 39%, transparent 74%,rgba(117, 117, 117,0.02) 74%, rgba(117, 117, 117,0.02) 100%),linear-gradient(129deg, rgba(222, 222, 222,0.02) 0%, rgba(222, 222, 222,0.02) 65%,transparent 65%, transparent 73%,rgba(83, 83, 83,0.02) 73%, rgba(83, 83, 83,0.02) 100%),linear-gradient(90deg, rgb(255,255,255),rgb(255,255,255));
+}
+.category-btn{
+  display: none; 
+  text-decoration: none;
+}
+.search-input{
+  background-color: #f1f1f1;
+}
+.category-menu{
+  height: 381px;
+}
+.carousel-inner{
+  max-height: 380px;
+}
+.bg-footer{
+  color:#A9A9A9; 
+  background-image: linear-gradient(12deg, rgba(193, 193, 193,0.05) 0%, rgba(193, 193, 193,0.05) 2%,rgba(129, 129, 129,0.05) 2%, rgba(129, 129, 129,0.05) 27%,rgba(185, 185, 185,0.05) 27%, rgba(185, 185, 185,0.05) 66%,rgba(83, 83, 83,0.05) 66%, rgba(83, 83, 83,0.05) 100%),linear-gradient(321deg, rgba(240, 240, 240,0.05) 0%, rgba(240, 240, 240,0.05) 13%,rgba(231, 231, 231,0.05) 13%, rgba(231, 231, 231,0.05) 34%,rgba(139, 139, 139,0.05) 34%, rgba(139, 139, 139,0.05) 71%,rgba(112, 112, 112,0.05) 71%, rgba(112, 112, 112,0.05) 100%),linear-gradient(236deg, rgba(189, 189, 189,0.05) 0%, rgba(189, 189, 189,0.05) 47%,rgba(138, 138, 138,0.05) 47%, rgba(138, 138, 138,0.05) 58%,rgba(108, 108, 108,0.05) 58%, rgba(108, 108, 108,0.05) 85%,rgba(143, 143, 143,0.05) 85%, rgba(143, 143, 143,0.05) 100%),linear-gradient(96deg, rgba(53, 53, 53,0.05) 0%, rgba(53, 53, 53,0.05) 53%,rgba(44, 44, 44,0.05) 53%, rgba(44, 44, 44,0.05) 82%,rgba(77, 77, 77,0.05) 82%, rgba(77, 77, 77,0.05) 98%,rgba(8, 8, 8,0.05) 98%, rgba(8, 8, 8,0.05) 100%),linear-gradient(334deg, hsl(247,0%,2%),hsl(247,0%,2%));
+}
+.product-card{
+ width:10em;  
+ height:20em
 }
